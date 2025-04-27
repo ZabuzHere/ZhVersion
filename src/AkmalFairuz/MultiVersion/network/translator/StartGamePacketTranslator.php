@@ -93,11 +93,10 @@ class StartGamePacketTranslator {
 
         $packet->putString($packet->multiplayerCorrelationId);
         ($packet->buffer .= ($packet->enableNewInventorySystem ? "\x01" : "\x00"));
-        if($protocol >= ProtocolConstants::BEDROCK_1_17_0){
-            $packet->putString($packet->serverSoftwareVersion);
-        }
-        if($protocol >= ProtocolConstants::BEDROCK_1_18_0){
-            $packet->putLLong(0);
-        }
+        $packet->putString($packet->serverSoftwareVersion);
+        $packet->put($packet->playerActorProperties->getEncodedNbt());
+        $packet->putLLong(0);
+        $packet->putUUID($packet->worldTemplateId);
+        $packet->putBool($packet->enableClientSideChunkGeneration);
     }
 }
