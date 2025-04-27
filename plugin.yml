@@ -1,6 +1,6 @@
 name: MultiVersion
 api: 5.27.1
-main: AzliRynz\MultiVersion-NG\Loader
+main: AzliRynz\MultiVersion\Loader
 version: 1.0.0
 description: A plugin to allows older Minecraft client versions to connect to newer server versions.
 mcpe-protocol: 786
