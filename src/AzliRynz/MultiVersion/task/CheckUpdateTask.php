@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\task;
+namespace AzliRynz\MultiVersion\task;
 
-use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion\Loader;
 use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\Internet;

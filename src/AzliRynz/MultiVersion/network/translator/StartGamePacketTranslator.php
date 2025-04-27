@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\network\translator;
+namespace AzliRynz\MultiVersion\network\translator;
 
-use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
-use AzliRynz\MultiVersion-NG\network\Serializer;
+use AzliRynz\MultiVersion\network\ProtocolConstants;
+use AzliRynz\MultiVersion\network\Serializer;
 use pocketmine\nbt\NetworkLittleEndianNBTStream;
 use pocketmine\network\mcpe\protocol\StartGamePacket;
 use function count;

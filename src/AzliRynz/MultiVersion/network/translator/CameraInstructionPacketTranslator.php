@@ -1,6 +1,6 @@
 <?php
 
-namespace AzliRynz\MultiVersion-NG\network\translator;
+namespace AzliRynz\MultiVersion\network\translator;
 
 use pocketmine\network\mcpe\protocol\CameraInstructionPacket;
 

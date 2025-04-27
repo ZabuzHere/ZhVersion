@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG;
+namespace AzliRynz\MultiVersion;
 
 use function yaml_parse_file;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\network\convert;
+namespace AzliRynz\MultiVersion\network\convert;
 
-use AzliRynz\MultiVersion-NG\Loader;
-use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
+use AzliRynz\MultiVersion\Loader;
+use AzliRynz\MultiVersion\network\ProtocolConstants;
 use pocketmine\block\BlockIds;
 use pocketmine\nbt\NetworkLittleEndianNBTStream;
 use pocketmine\nbt\tag\CompoundTag;

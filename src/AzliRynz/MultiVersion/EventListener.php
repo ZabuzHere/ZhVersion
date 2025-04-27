@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG;
+namespace AzliRynz\MultiVersion;
 
-use AzliRynz\MultiVersion-NG\network\MultiVersionSessionAdapter;
-use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
-use AzliRynz\MultiVersion-NG\network\Translator;
-use AzliRynz\MultiVersion-NG\session\SessionManager;
-use AzliRynz\MultiVersion-NG\task\CompressTask;
-use AzliRynz\MultiVersion-NG\task\DecompressTask;
-use AzliRynz\MultiVersion-NG\utils\Utils;
+use AzliRynz\MultiVersion\network\MultiVersionSessionAdapter;
+use AzliRynz\MultiVersion\network\ProtocolConstants;
+use AzliRynz\MultiVersion\network\Translator;
+use AzliRynz\MultiVersion\session\SessionManager;
+use AzliRynz\MultiVersion\task\CompressTask;
+use AzliRynz\MultiVersion\task\DecompressTask;
+use AzliRynz\MultiVersion\utils\Utils;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\server\DataPacketReceiveEvent;

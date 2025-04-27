@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\network;
+namespace AzliRynz\MultiVersion\network;
 
 use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\network\mcpe\PlayerNetworkSessionAdapter;

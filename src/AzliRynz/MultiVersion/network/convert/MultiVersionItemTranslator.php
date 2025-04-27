@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\network\convert;
+namespace AzliRynz\MultiVersion\network\convert;
 
-use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion\Loader;
 use pocketmine\network\mcpe\convert\ItemTranslator;
 use pocketmine\utils\AssumptionFailedError;
 use pocketmine\utils\SingletonTrait;

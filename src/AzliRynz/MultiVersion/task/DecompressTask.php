@@ -2,37 +2,32 @@
 
 declare(strict_types=1);
 
-namespace AzliRynz\MultiVersion-NG\task;
+namespace AzliRynz\MultiVersion\task;
 
-use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion\Loader;
 use pocketmine\network\mcpe\protocol\BatchPacket;
 use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
-use function chr;
-use function zlib_encode;
-use const ZLIB_ENCODING_GZIP;
+use function zlib_decode;
 
-class CompressTask extends AsyncTask{
+class DecompressTask extends AsyncTask{
 
     /** @var string */
-    private $payload;
+    private $buffer;
 
     /** @var bool */
     private $fail = false;
 
-    /** @var int */
-    private $level;
-
     public function __construct(BatchPacket $packet, callable $callback) {
-        $packet->reset();
-        $this->payload = $packet->payload;
+        $packet->offset = 0;
+        $packet->getByte();
+        $this->buffer = $packet->getRemaining();
         $this->storeLocal([$packet, $callback]);
-        $this->level = Server::getInstance()->networkCompressionLevel;
     }
 
     public function onRun(){
         try{
-            $this->setResult(zlib_encode($this->payload, ZLIB_ENCODING_RAW, $this->level));
+            $this->setResult(zlib_decode($this->buffer, 1024 * 1024 * 2));
         } catch(\Exception $e) {
             $this->fail = true;
         }
@@ -40,14 +35,14 @@ class CompressTask extends AsyncTask{
 
     public function onCompletion(Server $server){
         if($this->fail) {
-            Loader::getInstance()->getLogger()->error("Failed to compress batch packet");
+            Loader::getInstance()->getLogger()->error("Failed to decompress batch packet");
             return;
         }
         [$packet, $callback] = $this->fetchLocal();
         /** @var BatchPacket $packet */
-        $packet->isEncoded = true;
-        $packet->buffer .= chr($packet->pid());
-        $packet->buffer .= $this->getResult();
+        $packet->isEncoded = false;
+        $packet->offset = 0;
+        $packet->payload = $this->getResult();
         $callback($packet);
     }
 }
