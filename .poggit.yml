@@ -1,7 +1,8 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/AkmalFairuz/MultiVersion
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/rEADRynz/MultiVersion-NG
 build-by-default: true
 branches:
 - master
+- 1.21-1.21.80
 projects:
   MultiVersion:
     path: ""
