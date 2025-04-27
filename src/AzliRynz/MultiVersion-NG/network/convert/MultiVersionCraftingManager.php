@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\network\convert;
+namespace AzliRynz\MultiVersion-NG\network\convert;
 
-use AkmalFairuz\MultiVersion\Loader;
-use AkmalFairuz\MultiVersion\network\ProtocolConstants;
-use AkmalFairuz\MultiVersion\network\Translator;
+use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
+use AzliRynz\MultiVersion-NG\network\Translator;
 use pocketmine\inventory\CraftingManager;
 use pocketmine\network\mcpe\protocol\BatchPacket;
 use pocketmine\network\mcpe\protocol\CraftingDataPacket;

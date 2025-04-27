@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion;
+namespace AzliRynz\MultiVersion-NG;
 
-use AkmalFairuz\MultiVersion\network\MultiVersionSessionAdapter;
-use AkmalFairuz\MultiVersion\network\ProtocolConstants;
-use AkmalFairuz\MultiVersion\network\Translator;
-use AkmalFairuz\MultiVersion\session\SessionManager;
-use AkmalFairuz\MultiVersion\task\CompressTask;
-use AkmalFairuz\MultiVersion\task\DecompressTask;
-use AkmalFairuz\MultiVersion\utils\Utils;
+use AzliRynz\MultiVersion-NG\network\MultiVersionSessionAdapter;
+use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
+use AzliRynz\MultiVersion-NG\network\Translator;
+use AzliRynz\MultiVersion-NG\session\SessionManager;
+use AzliRynz\MultiVersion-NG\task\CompressTask;
+use AzliRynz\MultiVersion-NG\task\DecompressTask;
+use AzliRynz\MultiVersion-NG\utils\Utils;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\server\DataPacketReceiveEvent;

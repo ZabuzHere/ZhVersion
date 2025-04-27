@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion;
+namespace AzliRynz\MultiVersion-NG;
 
-use AkmalFairuz\MultiVersion\command\MultiVersionCommand;
-use AkmalFairuz\MultiVersion\network\convert\MultiVersionCraftingManager;
-use AkmalFairuz\MultiVersion\network\convert\MultiVersionRuntimeBlockMapping;
-use AkmalFairuz\MultiVersion\task\CheckUpdateTask;
+use AzliRynz\MultiVersion-NG\command\MultiVersionCommand;
+use AzliRynz\MultiVersion-NG\network\convert\MultiVersionCraftingManager;
+use AzliRynz\MultiVersion-NG\network\convert\MultiVersionRuntimeBlockMapping;
+use AzliRynz\MultiVersion-NG\task\CheckUpdateTask;
 use pocketmine\inventory\CraftingManager;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;

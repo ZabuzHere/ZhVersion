@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\network;
+namespace AzliRynz\MultiVersion-NG\network;
 
-use AkmalFairuz\MultiVersion\network\convert\MultiVersionItemTranslator;
-use AkmalFairuz\MultiVersion\network\convert\MultiVersionItemTypeDictionary;
-use AkmalFairuz\MultiVersion\network\convert\MultiVersionRuntimeBlockMapping;
+use AzliRynz\MultiVersion-NG\network\convert\MultiVersionItemTranslator;
+use AzliRynz\MultiVersion-NG\network\convert\MultiVersionItemTypeDictionary;
+use AzliRynz\MultiVersion-NG\network\convert\MultiVersionRuntimeBlockMapping;
 use pocketmine\block\BlockIds;
 use pocketmine\item\Durable;
 use pocketmine\item\Item;

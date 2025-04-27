@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\network;
+namespace AzliRynz\MultiVersion-NG\network;
 
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 

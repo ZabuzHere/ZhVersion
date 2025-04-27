@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion;
+namespace AzliRynz\MultiVersion-NG;
 
-use AkmalFairuz\MultiVersion\session\SessionManager;
+use AzliRynz\MultiVersion-NG\session\SessionManager;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\Player;
 

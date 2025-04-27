@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\network\convert;
+namespace AzliRynz\MultiVersion-NG\network\convert;
 
-use AkmalFairuz\MultiVersion\Loader;
-use AkmalFairuz\MultiVersion\network\ProtocolConstants;
+use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
 use pocketmine\network\mcpe\convert\ItemTypeDictionary;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\network\mcpe\protocol\types\ItemTypeEntry;

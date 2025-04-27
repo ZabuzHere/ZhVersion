@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\command;
+namespace AzliRynz\MultiVersion-NG\command;
 
-use AkmalFairuz\MultiVersion\Loader;
-use AkmalFairuz\MultiVersion\MultiVersion;
-use AkmalFairuz\MultiVersion\network\ProtocolConstants;
+use AzliRynz\MultiVersion-NG\Loader;
+use AzliRynz\MultiVersion-NG\MultiVersion;
+use AzliRynz\MultiVersion-NG\network\ProtocolConstants;
 use pocketmine\command\CommandSender;
 use pocketmine\command\PluginCommand;
 use pocketmine\Player;

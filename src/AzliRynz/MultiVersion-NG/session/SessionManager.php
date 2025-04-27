@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\session;
+namespace AzliRynz\MultiVersion-NG\session;
 
 use pocketmine\Player;
 

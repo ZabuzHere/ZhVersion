@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\network;
+namespace AzliRynz\MultiVersion-NG\network;
 
 use pocketmine\level\format\Chunk;
 use pocketmine\level\Level;

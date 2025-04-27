@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\task;
+namespace AzliRynz\MultiVersion-NG\task;
 
-use AkmalFairuz\MultiVersion\Loader;
+use AzliRynz\MultiVersion-NG\Loader;
 use pocketmine\network\mcpe\protocol\BatchPacket;
 use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;

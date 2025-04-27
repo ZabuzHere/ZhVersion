@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AkmalFairuz\MultiVersion\utils;
+namespace AzliRynz\MultiVersion-NG\utils;
 
 use ReflectionException;
 
