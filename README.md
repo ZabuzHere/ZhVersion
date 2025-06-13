@@ -1,3 +1,10 @@
+# Alert
+This plugin is trying to be further developed taking parts from several forks.
+
+- https://github.com/NetherGamesMC/PocketMine-MP
+- https://github.com/AkmalFairuz/BedrockData
+- https://github.com/ZabuzHere/NightfallProtocols
+
 # Protocol Version Support
 - 1.21.80 (`800`)
 - 1.21.70 (`786`)
@@ -12,10 +19,3 @@
 - 1.20.70 (`662`)
 - 1.20.60 (`649`)
 - 1.20.50 (`630`)
-
-# Discontinued
-This plugin is discontinued.
-Alternative:
-
-- https://github.com/NetherGamesMC/PocketMine-MP
-- https://github.com/VenityNetwork/PocketMine-MP
